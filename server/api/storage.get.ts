@@ -11,9 +11,4 @@ export default defineEventHandler(async event => {
 //   console.log(dataStorage.getMount('data:test'));
   await kvStorage.setItem('test', 'works 123')
   return await kvStorage.getItem('test') // Value persists
-
-// You can use generics to define types
-//   await useStorage<{ hello: string }>('test').getItem('foo')
-//   await useStorage('test').getItem<{ hello: string }>('foo')
-
 });
