@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   nitro: {
     storage: {
       kv: {
-        driver: 'deno-kv'
+        driver: 'cloudflare-kv-binding',
       }
     }
   }

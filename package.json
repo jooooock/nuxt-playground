@@ -8,9 +8,7 @@
     "build": "nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "add:biz": "deno run -A --unstable-kv scripts/biz.ts",
-    "stat": "deno run -A --unstable-kv scripts/stat.ts"
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "@iconify-json/heroicons-solid": "^1.1.11",
