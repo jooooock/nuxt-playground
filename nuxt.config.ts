@@ -8,6 +8,15 @@ export default defineNuxtConfig({
     storage: {
       kv: {
         driver: 'cloudflare-kv-binding',
+      },
+      deno: {
+        driver: 'deno-kv',
+      }
+    },
+    devStorage: {
+      kv: {
+        driver: 'fs',
+        base: './data/kv'
       }
     }
   }
